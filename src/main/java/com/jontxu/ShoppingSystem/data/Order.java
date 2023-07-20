@@ -2,17 +2,16 @@ package com.jontxu.ShoppingSystem.data;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Objects;
 
 public final class Order {
     private final int id;
-    private final LocalDate data;
+    private final LocalDate date;
     private final Customer customer;
     private final List<Product> products;
 
-    public Order(int id, LocalDate data, Customer customer, List<Product> products) {
+    public Order(int id, LocalDate date, Customer customer, List<Product> products) {
         this.id = id;
-        this.data = data;
+        this.date = date;
         this.customer = customer;
         this.products = products;
     }
@@ -33,8 +32,8 @@ public final class Order {
         return id;
     }
 
-    public LocalDate getData() {
-        return data;
+    public LocalDate getDate() {
+        return date;
     }
 
     public Customer getCustomer() {
